@@ -5,7 +5,6 @@ import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
 
-
 import {
   BrowserRouter as Router,
   Routes,
@@ -36,13 +35,13 @@ function App() {
   return (
     <>
     <Router>
-      <Navbar title="textUtils" mode={mode} toggleMode={toggleMode}/>
+      <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
       <Alert alert={alert}/>
       <div className="container my-3">
 
         <Routes>
           <Route path="/about" element={<About/>}/>
-          <Route path="/"
+          <Route path="/my-app"
           element={<TextForm heading="Enter the text to analyze below" mode={mode}/>}/>
         </Routes>
         </div>
